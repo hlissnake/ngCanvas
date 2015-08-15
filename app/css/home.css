@@ -1,0 +1,45 @@
+.welcome{
+  font-size: 24px;
+  color:#777;
+  text-align: center;
+  padding-top: 150px;
+}
+
+/* 个人资料部分 */
+.selfprofile .list .item>.avatar{
+  width: 60px;
+  height: 60px;
+}
+
+.selfprofile .list .item.form{
+line-height:32px;
+}
+
+.selfprofile .list .form input{
+  padding-top:7px;
+  padding-bottom:7px;
+}
+
+.selfprofile .list .form .field{
+  margin-bottom: 0;
+}
+
+
+
+
+/* modal 部分 */
+#modal-profile{
+
+}
+
+#modal-profile .list{
+  max-height:300px;
+  overflow: hidden;
+  overflow-y:auto;
+}
+
+
+#modal-profile .ui.list .item>img{
+  width: 60px;
+  height: 60px;
+}

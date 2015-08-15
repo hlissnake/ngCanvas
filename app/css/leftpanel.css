@@ -1,0 +1,141 @@
+.leftpanel{
+    background: rgb(21, 26, 33);
+    color: rgb(255, 255, 255);
+    float: left;
+    z-index: 13;
+    width:240px;
+    height: 600px;
+}
+.leftpanel p {
+    margin: 0;
+}
+
+#contact {
+    /*width:239px;*/
+    /*width:238px;*/
+    /*height:598px;*/
+    /*padding:1px;*/
+}
+.profile{
+    height:50px;
+    padding:10px 15px;
+    position: relative;
+    background-color:#1D2631;
+    padding-bottom: 10px;
+}
+
+.profile .ui.avatar.image{
+    width:50px;
+    height:50px;
+    cursor: pointer;
+}
+
+.profile .profile-name{
+    font-size: 16px;
+margin-left: 0px;
+max-width: 85px;
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+display: inline-block;
+vertical-align: middle;
+}
+
+.profile .profile-contact{
+    cursor:pointer;
+    position: absolute;
+    right:45px;
+    top:25px;
+}
+.profile .dropdown{
+    position: absolute;
+    right:15px;
+    top:27px;
+}
+
+.profile .dropdown .menu .item{
+  font-size: 12px;
+  padding: .65em 1em!important;
+}
+
+#search{
+    margin: 10px 15px;
+    width:210px;
+}
+
+.leftpanel .conversation-list {
+    height:479px;
+    overflow-y: auto;
+    background-color: #fcfcfc;
+    border-right: 1px solid #ccc;
+    color:#666;
+}
+
+.leftpanel .conversation {
+    height: 46px;
+    padding:8px;
+    border-bottom:1px solid #ccc;
+    cursor: pointer;
+    position: relative;
+    transition:all 0.25s;
+}
+
+.leftpanel .conversation:hover{
+background-color: #f3f3f3;
+}
+
+.leftpanel .conversation.active {
+    background-color: #d0d8e3;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.1);
+}
+.leftpanel .avatar-wrap {
+    width:44px;
+    height:44px;
+    border:1px solid #fff;
+    float: left;
+    margin-right:8px;
+}
+.leftpanel .avatar-wrap img {
+    width: 44px;
+    height: 44px;
+}
+.leftpanel .conversation .info {
+    float: left;
+    width: 120px;
+    overflow: hidden;
+}
+.leftpanel .conversation .info .name {
+    color:#000;
+    margin-bottom:4px;
+    font-weight: bold;
+    height:21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.leftpanel .conversation .latest-msg {
+    height: 21px;
+overflow: hidden;
+font-size: 12px;
+text-overflow: ellipsis;
+line-height: 21px;
+white-space: nowrap;
+width: 100%;
+color: #999;
+}
+.leftpanel .conversation .extend {
+    float: right;
+}
+.leftpanel .conversation .unread {
+    position: absolute;
+    top:3px;
+    left:47px;
+    display: block;
+    width:10px;
+    height: 10px;
+    overflow: hidden;
+    background-color: #e74c3c;
+    border:1px solid #fff;
+    border-radius:50%;
+}

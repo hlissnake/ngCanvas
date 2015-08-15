@@ -1,0 +1,29 @@
+.ui.mini.modal {
+width: 500px;
+margin-left: -250px;
+}
+
+.ui.button{
+  font-weight: normal;
+}
+
+.ui.horizontal.breadcrumbs.list .item, ul.ui.horizontal.breadcrumbs.list li {
+margin-left: 2em;
+}
+
+.ui.horizontal.breadcrumbs.list .item:before, ul.ui.horizontal.breadcrumbs.list li:before {
+left:-1.3em;
+}
+
+.ui.breadcrumbs.list .item:before, ul.ui.list li:before {
+content: '＞';
+color: #bdbdbd;
+}
+
+.ui.selection.list .item{
+color: rgba(0,0,0,.5);
+}
+
+.ui.selection.list .item:hover{
+  color: rgba(0,0,0,.9);
+}

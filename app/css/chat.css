@@ -1,0 +1,299 @@
+.main-chat{
+  float: left;
+  overflow: auto;
+  position: absolute;
+  bottom: 49px;
+  top: 47px;
+  width: 100%;
+}
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+#J-upload,#J-ding{
+  position: absolute;
+  display:inline;
+  top:50%;
+  margin-top: -14px;
+  font-size: 18px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+#J-upload{
+  left:10px;
+}
+
+#J-ding{
+  right:10px;
+}
+
+/* 对话框部分 */
+.chat{
+  width: 100%;
+  margin: 10px 0;
+}
+.chat-avatar{
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+.chat-content-box{
+  position: relative;
+}
+.chat-content-arrow{
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  display: inline-block;
+  top:34px;
+}
+.chat-content-text-box{
+  word-break : break-all;
+  border-radius: 5px;
+  display:inline-block;
+  max-width: 240px;
+}
+.chat-content-text{
+  padding: 7px 10px 10px 7px;
+}
+.imge-dimmer{
+  overflow: auto;
+}
+.chat-img-box{
+  overflow: hidden;
+}
+.chat-img{
+  max-width: 230px;
+  padding: 5px;
+  cursor: pointer;
+}
+.ding-from .chat-img,.ding-to .chat-img{
+  border-bottom: 1px solid #f2cd20 ;
+}
+.ding-from .chat-content-text-box,.ding-to .chat-content-text-box{
+  background-color: #fbee5a ;
+  border: 1px solid #f2cd20 ;
+}
+.ding-from .chat-content-text,.ding-to .chat-content-text{
+  border-bottom: 1px solid #f2cd20 ;
+}
+.chat-status{
+  position: absolute;
+  bottom: 0px;
+  font-size: 12px;
+}
+.chat-status-time{
+  float: left;
+  width: 100%;
+  color: #a3a3a3;
+  text-align: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+.chat-status-time span{
+  background: #fff;
+z-index: 99;
+display: inline-block;
+padding: 0 10px;
+position: relative;
+font-size: 12px;
+}
+
+.chat-status-time:after{
+  content: "";
+display: block;
+border-bottom: 1px solid #cdcdcd;
+width: 30%;
+margin: 0 auto;
+position: absolute;
+left: 50%;
+margin-left: -15%;
+top: 50%;
+}
+.chat-status-read{
+  background-color: #fff;
+  color:#6acbf6;
+  padding: 4px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.chat-confirm{
+  padding: 7px 10px;
+}
+.chat-confirm-btn{
+  background-color: #fff;
+  border:1px solid #e7b22e;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.ding-mark{
+  padding-right: 15px;
+}
+.ding-from .icon-video,.ding-to .icon-video,.ding-from .video-time,.ding-to .video-time{
+  color: #f3aa2c;
+}
+.chat-status-comfirm{
+  display: inline-block;
+  color: #8C8865;
+  margin: 4px 26px 3px 10px;
+}
+.chat-status-cancel{
+  display: inline-block;
+  color: #bfbfbf;
+  margin: 4px 26px 3px 10px;
+}
+.chat-file-icon-box{
+  float: left;
+  width: 70px;
+  padding: 10px 0 0 0;
+}
+.chat-file-info-box p{
+  margin: 5px 0;
+}
+i.file-icon{
+  font-size: 50px;
+  margin: 0;
+}
+.chat-file-info-box{
+  margin: 0 10px 0 70px;
+  padding-top: 10px;
+}
+.chat-file-size,.chat-file-receive-tag{
+  color: #9a9a9a;
+}
+
+
+/* 我收到的信息 */
+.chat-from{
+  float: left;
+}
+.chat-from .chat-name{
+  text-align: left;
+  color: #6f675a;
+  height: 21px;
+}
+.chat-from .chat-avatar{
+  float: left;
+  margin-right: 10px;
+}
+.chat-from .chat-content-text-box{
+  background-color: #e1effc;
+  border: 1px solid #bfc8da;
+}
+.chat-from .chat-content-box{
+  float: left;
+}
+.chat-from .chat-content-arrow{
+  transform: rotate(45deg);
+  left: -4px;
+  background-color: #e1effc;
+  border-left: 1px solid #bfc8da;
+  border-bottom: 1px solid #bfc8da;
+}
+.chat-from .chat-status{
+  right: -60px;
+  text-align: left;
+}
+.modal-red-text{
+  color: #D95C5C;
+}
+.modal-green-text{
+  color: #5BBD72;
+}
+
+/* 我发出去的信息 */
+.chat-to{
+  float: right;
+}
+.chat-to .chat-name{
+  text-align: right;
+  color: #6f675a;
+  height: 21px;
+}
+.chat-to .chat-avatar{
+  float: right;
+  margin-left: 10px;
+}
+.chat-to .chat-content-text-box{
+  background-color: #e8e9eb;
+  border: 1px solid #bfc8da;
+}
+.chat-to .chat-content-box{
+  float: right;
+}
+.chat-to .chat-content-arrow{
+  background-color: #e8e9eb;
+  transform: rotate(45deg);
+  right:-5px;
+  border-right: 1px solid #bfc8da;
+  border-top: 1px solid #bfc8da;
+}
+.chat-to .chat-status{
+  left: -60px;
+  text-align: right;
+}
+
+
+/* 我收到的ding */
+.ding-from{
+  float: left;
+}
+.ding-from .chat-name{
+  text-align: left;
+  color: #6f675a;
+  height: 21px;
+}
+.ding-from .chat-avatar{
+  float: left;
+  margin-right: 10px;
+}
+.ding-from .chat-content-box{
+  float: left;
+}
+.ding-from .chat-content-arrow{
+  transform: rotate(45deg);
+  left: -4px;
+  background-color: #faec66;
+  border-left: 1px solid #f2cd20;
+  border-bottom: 1px solid #f2cd20;
+}
+.ding-from .chat-status{
+  right: -60px;
+  text-align: left;
+}
+
+
+/* 我发出去的信息 */
+.ding-to{
+  float: right;
+}
+.ding-to .chat-name{
+  text-align: right;
+  color: #6f675a;
+  height: 21px;
+}
+.ding-to .chat-avatar{
+  float: right;
+  margin-left: 10px;
+}
+.ding-to .chat-content-box{
+  float: right;
+}
+.ding-to .chat-content-arrow{
+  background-color: #faec66;
+  transform: rotate(45deg);
+  right:-5px;
+  border-right: 1px solid #f2cd20;
+  border-top: 1px solid #f2cd20;
+}
+.ding-to .chat-status{
+  left: -60px;
+  text-align: right;
+}
